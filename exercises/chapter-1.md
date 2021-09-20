@@ -4,7 +4,7 @@
 	> A sinusoid has initial phase phi = 0 and angular frequency omega = pi/10. What is its period in samples? What is the phase at sample number n=10?
 	- The period is 2 * pi/omega. 2pi is a full rotation, and omega, the angular frequency, is how often that rotation happens. So: 2pi/(pi/10) = 20 samples.
 	
-		<iframe src="https://www.desmos.com/calculator/vtbz60ipo7?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+		https://www.desmos.com/calculator/vtbz60ipo7
 	
 	- The phase at n = 10 is pi/10 * 10 = pi.
 
@@ -12,7 +12,7 @@
 2.
 	> Two sinusoids have periods of 20 and 30 samples, respectively. What is the period of the sum of the two?
 	- It's the least common multiple: 60.
-	<iframe src="https://www.desmos.com/calculator/biyhdr8qp9?embed" width="500" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+	https://www.desmos.com/calculator/biyhdr8qp9
 
 3.
 	> If 0 dB corresponds to an amplitude of 1, how many dB corresponds to amplitudes of 1.5, 2, 3, and 5?
