@@ -14,6 +14,7 @@
 	- It's the least common multiple: 60.
 	https://www.desmos.com/calculator/biyhdr8qp9
 
+
 3.
 	> If 0 dB corresponds to an amplitude of 1, how many dB corresponds to amplitudes of 1.5, 2, 3, and 5?
 	- `d = 20 * log10(a/a0)`
