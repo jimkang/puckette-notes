@@ -1,0 +1,99 @@
+{
+  "main": {
+    "id": "46380cf5f85f7201",
+    "type": "split",
+    "children": [
+      {
+        "id": "aff74f280953185b",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "exercises/chapter-02.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4301ecb31d73bd80",
+    "type": "split",
+    "children": [
+      {
+        "id": "31d6cce27ed15c23",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "edbb932d752e017f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "90624452c501e516",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b6a8879ce4d902f8",
+    "type": "split",
+    "children": [
+      {
+        "id": "2ca03d7dddfb3eaa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d9be9b2fd45d9c71",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "exercises/chapter-02.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "aff74f280953185b",
+  "lastOpenFiles": [
+    "exercises/chapter-02.md",
+    "notes/chapter-02.md",
+    "exercises/chapter-01.md",
+    "notes/chapter-01.md",
+    "exercises/Untitled.md",
+    "notes/Untitled.md",
+    "exercises/chapter-1.md"
+  ]
+}
