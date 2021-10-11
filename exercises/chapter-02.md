@@ -28,4 +28,4 @@
 	c. 
 8.
 	> If a wavetable's contents all fall between -1 and 1 in value, what is the range of possible outputs of wavetable lookup using 4-point interpolation?
-	- 1 to 1.
+	- -1 to 1.

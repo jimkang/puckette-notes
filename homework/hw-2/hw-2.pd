@@ -1,0 +1,38 @@
+#N canvas 876 263 732 767 12;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array flute-array 122772 float 2;
+#X coords 0 1 122772 -1 200 140 1;
+#X restore 358 30 graph;
+#X obj 25 62 soundfiler;
+#X msg 24 30 read -resize flute-G4-edit.wav flute-array;
+#X obj 115 443 out1~;
+#X obj 66 147 phasor~;
+#X floatatom 118 96 5 0 0 0 - - -;
+#X obj 134 278 tabread4~ flute-array;
+#X floatatom 301 245 5 0 0 0 - - -;
+#X obj 273 360 tabwrite~ out-array;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array out-array 100 float 2;
+#X coords 0 1 100 -1 200 140 1;
+#X restore 291 434 graph;
+#X obj 275 324 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 83 231 +~ 10000;
+#X obj 41 185 *~ 40000;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array transpose-array 12 float 3;
+#A 0 11.3143 10.0286 9.08577 8.5715 7.80009 7.11439 6.17155 5.48585
+4.20016 3.17162 1.80022 0.085968;
+#X coords 0 12 12 0 200 140 1 0 0;
+#X restore 458 236 graph;
+#X text 116 179 phasor generates between 0 and 1 We want between 0
+and a portion of the array size.;
+#X connect 2 0 1 0;
+#X connect 4 0 12 0;
+#X connect 5 0 4 0;
+#X connect 6 0 8 0;
+#X connect 6 0 3 0;
+#X connect 7 0 6 1;
+#X connect 10 0 8 0;
+#X connect 11 0 6 0;
+#X connect 12 0 11 0;

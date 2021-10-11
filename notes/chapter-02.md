@@ -6,4 +6,7 @@ If you have a sequence of samples, you don't have to play them in order. Instead
 
 The relative amount of time the waveform fills the cycle.
 
-Squeezing the waveform by a factor of 2 has the effect of stretching the Fourier series by two.
+Squeezing the waveform by a factor of 2 has the effect of stretching the Fourier series by two.!
+
+![[chapter-02.svg]]
+
