@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "notes/lecture-04.md",
+            "file": "notes/lecture-01.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "notes/lecture-04.md",
+                "file": "notes/lecture-01.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,10 +88,10 @@
   },
   "active": "aff74f280953185b",
   "lastOpenFiles": [
-    "notes/lecture-04.md",
     "notes/lecture-01.md",
-    "exercises/chapter-02.md",
     "notes/chapter-02.md",
+    "notes/lecture-04.md",
+    "exercises/chapter-02.md",
     "notes/chapter-02.svg",
     "notes/Untitled.md",
     "exercises/chapter-01.md",
