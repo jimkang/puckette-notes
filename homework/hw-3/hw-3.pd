@@ -1,15 +1,36 @@
-#N canvas 898 207 781 577 12;
-#X obj 307 73 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X obj 325 162 subpatch;
-#X obj 281 304 out1~;
-#X text 263 70 Start;
-#X text 412 116 Fade out;
-#X obj 433 137 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#N canvas 57 176 1118 794 12;
+#X obj 106 100 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X msg 327 104 2000;
-#X text 332 79 Fade in (milliseconds);
+#X obj 124 189 subpatch;
+#X obj 307 307 out1~;
+#X text 62 97 Start;
+#X text 211 143 Fade out;
+#X obj 232 164 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 131 106 Fade in (milliseconds);
+#X obj 411 115 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 367 112 Start;
+#X text 516 158 Fade out;
+#X obj 537 179 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 431 146 2000;
+#X text 436 121 Fade in (milliseconds);
+#X obj 429 204 subpatch;
+#X msg 126 131 500;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array src-array 5500 float 2;
+#X coords 0 1 5500 -1 200 140 1 0 0;
+#X restore 462 310 graph;
+#N canvas 0 50 450 250 (subpatch) 0;
+#X array ctrl-array 8 float 3;
+#A 0 0 12 0 12 0 12 13 12;
+#X coords 0 24 8 0 200 140 1 0 0;
+#X restore 440 469 graph;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 5 0 1 2;
-#X connect 6 0 1 1;
+#X connect 7 0 13 0;
+#X connect 10 0 13 2;
+#X connect 11 0 13 1;
+#X connect 14 0 1 1;
