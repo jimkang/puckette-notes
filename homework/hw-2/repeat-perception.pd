@@ -1,10 +1,10 @@
 #N canvas 876 263 732 767 12;
 #N canvas 0 50 450 250 (subpatch) 0;
-#X array flute-array 26902 float 2;
-#X coords 0 1 26902 -1 200 140 1;
-#X restore 358 30 graph;
-#X obj 25 62 soundfiler;
-#X obj 115 448 out1~;
+#X array flute-array 114091 float 2;
+#X coords 0 1 114091 -1 200 140 1 0 0;
+#X restore 450 21 graph;
+#X obj 24 86 soundfiler;
+#X obj 151 455 out1~;
 #X obj 66 147 phasor~;
 #X floatatom 118 96 5 0 0 0 - - -;
 #X obj 134 278 tabread4~ flute-array;
@@ -24,15 +24,16 @@
 #X restore 458 236 graph;
 #X text 116 179 phasor generates between 0 and 1 We want between 0
 and a portion of the array size.;
-#X obj 41 185 *~ 26902;
-#X obj 83 231 +~ 0;
-#X msg 24 30 read -resize all-right.aiff flute-array;
-#X connect 3 0 12 0;
+#X msg 24 30 read -resize 154330__carlos-vaquero__bassoon-c-2-tenuto-vibrato.wav
+flute-array;
+#X obj 41 185 *~ 120000;
+#X obj 83 231 +~ 1000;
+#X connect 3 0 13 0;
 #X connect 4 0 3 0;
 #X connect 5 0 7 0;
 #X connect 5 0 2 0;
 #X connect 6 0 5 1;
 #X connect 9 0 7 0;
-#X connect 12 0 13 0;
-#X connect 13 0 5 0;
-#X connect 14 0 1 0;
+#X connect 12 0 1 0;
+#X connect 13 0 14 0;
+#X connect 14 0 5 0;
