@@ -1,5 +1,5 @@
 #N canvas 138 168 859 794 12;
-#X obj 307 307 out1~;
+#X obj 440 672 out1~;
 #X text 114 101 Fade out;
 #X obj 138 124 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -71,6 +71,7 @@
 #X obj 469 519 partial;
 #X obj 130 517 partial;
 #X obj 32 328 partial;
+#X obj 429 628 catch~ sum;
 #X connect 2 0 46 1;
 #X connect 5 0 47 1;
 #X connect 7 0 46 0;
@@ -113,11 +114,4 @@
 #X connect 43 0 52 2;
 #X connect 44 0 50 2;
 #X connect 45 0 48 2;
-#X connect 46 0 0 0;
-#X connect 47 0 0 0;
-#X connect 48 0 0 0;
-#X connect 49 0 0 0;
-#X connect 50 0 0 0;
-#X connect 51 0 0 0;
-#X connect 52 0 0 0;
-#X connect 53 0 0 0;
+#X connect 54 0 0 0;

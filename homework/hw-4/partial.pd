@@ -65,6 +65,7 @@
 #X obj 123 550 *~;
 #X obj 140 460 * 1;
 #X floatatom 836 349 10 0 0 0 - - -;
+#X obj 223 689 throw~ sum;
 #X connect 0 0 55 1;
 #X connect 0 0 57 0;
 #X connect 1 0 54 0;
@@ -86,6 +87,7 @@
 #X connect 19 0 43 0;
 #X connect 20 0 22 0;
 #X connect 20 0 34 0;
+#X connect 20 0 58 0;
 #X connect 22 0 21 0;
 #X connect 23 0 22 0;
 #X connect 24 0 23 0;
