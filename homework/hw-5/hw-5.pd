@@ -1,5 +1,5 @@
 #N struct line-label float x float y float z symbol label;
-#N canvas 51 324 592 470 12;
+#N canvas 976 106 592 470 12;
 #X obj 107 264 out1~;
 #X obj 152 60 send start-dist-voice;
 #X obj 146 33 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
@@ -7,8 +7,37 @@
 #X floatatom 390 39 5 0 0 0 - - -;
 #X obj 394 81 send mod-index \$1;
 #X text 390 22 Modulation index (max 10);
-#X obj 142 131 distorted-voice 52 50;
+#X obj 322 190 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 318 225 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 314 264 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 272 223 even;
+#X text 280 246 odd;
+#X text 262 202 mixed;
+#X obj 345 283 f 0.25;
+#X obj 333 242 f 0;
+#X obj 350 180 f 0.1;
+#X obj 426 244 send symmetry;
+#X floatatom 281 343 5 0 100 0 Amplitude - -;
+#X obj 293 372 / 100;
+#X obj 289 406 send amplitude;
+#X obj 73 221 catch~ sum;
+#X obj 17 77 distorted-voice 52;
+#X obj 20 109 distorted-voice 59;
+#X obj 25 137 distorted-voice 60;
+#X obj 33 165 distorted-voice 62;
+#X obj 36 189 distorted-voice 64;
 #X connect 2 0 1 0;
 #X connect 2 0 4 0;
 #X connect 3 0 4 0;
-#X connect 6 0 0 0;
+#X connect 6 0 14 0;
+#X connect 7 0 13 0;
+#X connect 8 0 12 0;
+#X connect 12 0 15 0;
+#X connect 13 0 15 0;
+#X connect 14 0 15 0;
+#X connect 16 0 17 0;
+#X connect 17 0 18 0;
+#X connect 19 0 0 0;
